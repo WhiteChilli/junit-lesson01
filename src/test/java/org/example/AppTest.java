@@ -1,8 +1,8 @@
 package org.example;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 /**
  * Unit test for simple App.
@@ -15,6 +15,22 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+
+        Card card = new Card( 10.0, "Mastercard");
+
+        assertNotNull( card.type );
+        assertEquals( "Mastercard", card.type );
+
+
+//        assertNull( card.type );
+
+//        assertEquals( 0.0, card.amount  );
+
+//        assertNull( null );
+//        assertNotNull( 1 );
+
     }
+
+
+
 }
